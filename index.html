@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lila Roginski — Marketing & Brand Creative</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -308,7 +304,7 @@
   }
   .card-link:hover { gap: 10px; }
 
-  /* ── WORK SECTIONS (Newsletters, LinkedIn, Events) ── */
+  /* ── WORK SECTIONS ── */
   #newsletters, #linkedin, #events { background: var(--cream); border-top: 3px solid var(--yellow); }
 
   .events-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
@@ -456,320 +452,357 @@
 </style>
 </head>
 <body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">Lila Roginski.</a>
+  <ul class="nav-links">
+    <li><a href="#newsletters">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-tl"></div>
+    <div class="blob blob-bl"></div>
+    <div class="blob blob-tr"></div>
+  </div>
+  <div class="hero-photo" aria-hidden="true">
+    <img src="uploads/Lila_Roginski_photo.jpeg" alt="Lila Roginski">
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Business Development Manager &amp; Content Creator</p>
+    <h1 class="hero-title">
+      Building <em>community</em><br>
+      around what<br>
+      <span class="accent-word">matters most</span>
+    </h1>
+    <p class="hero-body">
+      I'm Lila Roginski — a business development manager and content creator in the sustainability space. I grow audiences, produce video, and turn ideas into events people actually show up for.
+    </p>
+    <div class="hero-ctas">
+      <a href="#newsletters" class="hero-cta">
+        View my work
+        <span class="arrow" style="color:var(--dark)">↓</span>
+      </a>
+      <a href="#video" class="hero-cta-secondary">
+        Watch my intro
+        <span class="play-circle">▶</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <p class="section-label">About</p>
+    <h2 class="section-title" style="color:var(--cream)">Marketing meets mission</h2>
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>I'm a marketing and brand creative with a passion for sustainability and community building. As Business Development Manager at Sustainability Creatives, I craft content, grow audiences, and connect people who are building a better world.</p>
+        <p>My work spans video production, weekly newsletters, LinkedIn content strategy, and event management — from intimate career workshops to multi-city Climate Week activations. I believe great storytelling is how movements grow.</p>
+        <p>I hold a B.A. in Environmental Studies from UC Santa Cruz (Magna cum laude) and continue expanding my toolkit with coursework in data science, sustainability reporting, and business.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-desc">Audience members grown across email, LinkedIn &amp; calendar</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">~100</div>
+          <div class="stat-desc">Virtual career workshops, supporting 3,000+ job seekers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">65+</div>
+          <div class="stat-desc">Weekly newsletters, growing from 0 to ~1,300 subscribers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <div class="container">
+    <p class="section-label">Video</p>
+    <h2 class="section-title">Meet Lila</h2>
+    <div class="video-wrapper">
+      <iframe src="https://player.vimeo.com/video/1184975986?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Sustainability Creatives Introductory Video"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTERS -->
+<section id="newsletters">
+  <div class="container">
+    <p class="section-label">Newsletters</p>
+    <h2 class="section-title">Building an audience,<br><em style="font-style:italic;font-family:'DM Serif Display', serif;font-weight:700;color:var(--text-muted)">one week at a time</em></h2>
+    <p class="content-intro">As Business Development Manager at Sustainability Creatives, I design and write our weekly newsletter. Over 1.5 years, I built an audience of ~1,300 subscribers and sent 65+ issues.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <span class="card-type">Newsletter</span>
+        <p class="card-title">"Warming: Sweet Climate Week Pics Included!"</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">998</div><div class="stat-chip-label">Sent</div></div>
+          <div><div class="stat-chip-val">65.1%</div><div class="stat-chip-label">Opened</div></div>
+          <div><div class="stat-chip-val">2.51%</div><div class="stat-chip-label">Clicked</div></div>
+        </div>
+        <a href="https://eocampaign1.com/web-version?p=8015b190-29ee-11f0-8449-f5c623a97377&pt=campaign&t=1746485666&s=b90299e014521ed6ace4fecc6e3682e4e0922bcffce8f35af4630f79c4cbb72b" target="_blank" rel="noopener" class="card-link">Read issue →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">Newsletter</span>
+        <p class="card-title">"Why Hiring Managers Skip Your Portfolio: 2 Common Mistakes"</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">1,165</div><div class="stat-chip-label">Sent</div></div>
+          <div><div class="stat-chip-val">49.7%</div><div class="stat-chip-label">Opened</div></div>
+          <div><div class="stat-chip-val">1.37%</div><div class="stat-chip-label">Clicked</div></div>
+        </div>
+        <a href="https://eocampaign1.com/web-version?p=7e2423ba-8a9e-11f0-863a-71a7ef473c68&pt=campaign&t=1757117901&s=20a09dbd515fa8695192755865ccf4212bbb8c5b489610ddd3ac40b5e5301d44" target="_blank" rel="noopener" class="card-link">Read issue →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">Newsletter</span>
+        <p class="card-title">"Free Leadership Training!"</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">674</div><div class="stat-chip-label">Sent</div></div>
+          <div><div class="stat-chip-val">64.1%</div><div class="stat-chip-label">Opened</div></div>
+          <div><div class="stat-chip-val">5.93%</div><div class="stat-chip-label">Clicked</div></div>
+        </div>
+        <a href="https://eocampaign1.com/web-version?p=40620446-fa36-11ef-81d2-fb9a6fac7f9d&pt=campaign&t=1741387515&s=4ee06cd5db2a78f4935fe16cd6a64297e9323a842d88ef7a36646e9973a75512" target="_blank" rel="noopener" class="card-link">Read issue →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINKEDIN -->
+<section id="linkedin">
+  <div class="container">
+    <p class="section-label">LinkedIn Content</p>
+    <h2 class="section-title">Growing communities<br><em style="font-style:italic;font-family:'DM Serif Display', serif;font-weight:700;color:var(--text-muted)">through strategic content</em></h2>
+    <p class="content-intro">I lead LinkedIn strategy across three accounts — growing my personal following from 300 → 1,707, our director's account from 2,900 → 10,600, and the company page from launch → 1,100 followers.</p>
+    <div class="cards-grid two-col">
+      <div class="card">
+        <span class="card-type">LinkedIn</span>
+        <p class="card-title">Blog-style post</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">135</div><div class="stat-chip-label">Reactions</div></div>
+          <div><div class="stat-chip-val">30</div><div class="stat-chip-label">Comments</div></div>
+        </div>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7307836031729311745/" target="_blank" rel="noopener" class="card-link">View post →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">LinkedIn</span>
+        <p class="card-title">Partnered event promotion</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">23</div><div class="stat-chip-label">Reactions</div></div>
+          <div><div class="stat-chip-val">1</div><div class="stat-chip-label">Comments</div></div>
+          <div><div class="stat-chip-val">1,097</div><div class="stat-chip-label">Impressions</div></div>
+        </div>
+        <a href="https://www.linkedin.com/posts/lila-roginski_the-sustainability-creatives-are-excited-activity-7348002884866756608-BbNs" target="_blank" rel="noopener" class="card-link">View post →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">LinkedIn</span>
+        <p class="card-title">SF Climate Week promotion</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">23</div><div class="stat-chip-label">Reactions</div></div>
+          <div><div class="stat-chip-val">4</div><div class="stat-chip-label">Comments</div></div>
+          <div><div class="stat-chip-val">881</div><div class="stat-chip-label">Impressions</div></div>
+        </div>
+        <a href="https://www.linkedin.com/posts/lila-roginski_laclimateweek-sfclimateweek-activity-7319152269101318144-MatF/" target="_blank" rel="noopener" class="card-link">View post →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">LinkedIn</span>
+        <p class="card-title">Thought piece</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">28</div><div class="stat-chip-label">Reactions</div></div>
+          <div><div class="stat-chip-val">6</div><div class="stat-chip-label">Comments</div></div>
+          <div><div class="stat-chip-val">1,086</div><div class="stat-chip-label">Impressions</div></div>
+        </div>
+        <a href="https://www.linkedin.com/posts/lila-roginski_welcome-to-the-hub-activity-7313991250997563392-kFnb/" target="_blank" rel="noopener" class="card-link">View post →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="container">
+    <p class="section-label">Events</p>
+    <h2 class="section-title">Bringing people together</h2>
+    <p class="content-intro">I manage the Sustainability Creatives event calendar on Luma, growing from launch to 1,500 subscribers with 183 events averaging ~25 attendees each.</p>
+    <div class="events-grid">
+      <a href="https://luma.com/sustainabilitycreatives?k=c" target="_blank" rel="noopener" class="event-featured">
+        <div>
+          <span class="event-featured-label">Luma Calendar</span>
+          <p class="event-featured-title">Sustainability Creatives</p>
+        </div>
+        <div class="event-feat-stats">
+          <div style="text-align:center">
+            <div class="event-feat-num">1,433</div>
+            <div class="event-feat-lbl">Subscribers</div>
+          </div>
+          <div style="text-align:center">
+            <div class="event-feat-num">183</div>
+            <div class="event-feat-lbl">Events</div>
+          </div>
+          <div style="text-align:center">
+            <div class="event-feat-num">22</div>
+            <div class="event-feat-lbl">★ Reviews</div>
+          </div>
+        </div>
+      </a>
+      <div class="card">
+        <span class="card-type">Event</span>
+        <p class="card-title">Climate Confessional: Charlie Sellars</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">126</div><div class="stat-chip-label">Guests</div></div>
+        </div>
+        <a href="https://luma.com/5b2mf1oe" target="_blank" rel="noopener" class="card-link">View event →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">Event</span>
+        <p class="card-title">Portfolio Tips &amp; Tricks: Job Switcher Edition</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">62</div><div class="stat-chip-label">Guests</div></div>
+        </div>
+        <a href="https://luma.com/qwzglyde" target="_blank" rel="noopener" class="card-link">View event →</a>
+      </div>
+      <div class="card">
+        <span class="card-type">Event</span>
+        <p class="card-title">Re-design Jam: Bright Ideas for a Sustainable Future</p>
+        <div class="card-stats">
+          <div><div class="stat-chip-val">67</div><div class="stat-chip-label">Guests</div></div>
+        </div>
+        <a href="https://luma.com/466bqkng" target="_blank" rel="noopener" class="card-link">View event →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Career journey</h2>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <p class="exp-period">January 2024 – Present</p>
+        <h3 class="exp-role">Business Development Manager</h3>
+        <p class="exp-company">Sustainability Creatives</p>
+        <ul class="exp-bullets">
+          <li>Onboarded 150+ professionals to a climate career platform via multi-channel outreach</li>
+          <li>Expanded email, LinkedIn, and calendar audiences by 10,000+ through tailored campaigns</li>
+          <li>Facilitated ~100 virtual career workshops supporting 3,000+ job seekers</li>
+          <li>Planned and executed multi-city 2025 Climate Week program in LA, SF, and NYC (~60 attendees/event)</li>
+          <li>Led content strategy and copywriting across all outreach channels</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <p class="exp-period">September 2021 – July 2023</p>
+        <h3 class="exp-role">Program Manager → Campaign Organizer</h3>
+        <p class="exp-company">Enviroslug</p>
+        <ul class="exp-bullets">
+          <li>Supervised $350,000 budget; created quarterly budgets and cash flow forecasts</li>
+          <li>Achieved 88% campus voter approval for the No Time to Waste Campaign</li>
+          <li>Engaged ~100 students in a waste photo contest, resulting in 500+ petition signatures</li>
+          <li>Recruited and trained 10 volunteers in public speaking, social media, and communications</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-dot"></div>
+        <p class="exp-period">January 2020 – June 2023</p>
+        <h3 class="exp-role">Teacher</h3>
+        <p class="exp-company">Kids In Nature</p>
+        <ul class="exp-bullets">
+          <li>Led after-school environmental education programs for ~30 K–5 students</li>
+          <li>Designed interactive, storytelling-based lessons on complex environmental topics</li>
+          <li>Offered behavioral support to neurodivergent students</li>
+        </ul>
+      </div>
+    </div>
+    <div class="edu-block">
+      <p class="section-label">Education</p>
+      <div>
+        <p class="edu-school">University of California, Santa Cruz</p>
+        <p class="edu-detail">B.A. Environmental Studies · Minor in Sustainability Studies · Magna cum laude · GPA 3.88 · June 2022</p>
+      </div>
+      <div>
+        <p class="edu-school">Santa Monica Community College</p>
+        <p class="edu-detail">Sustainability Reporting, Data Science, Business &amp; Excel · Dean's Honors · GPA 3.77 · Feb 2025–Present</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let's work together</h2>
+    <p class="contact-tagline">Open to marketing, content strategy, and brand creative roles in the sustainability space.</p>
+    <div class="contact-links">
+      <a href="mailto:Lilaclaireroginski@gmail.com" class="contact-pill dark">Lilaclaireroginski@gmail.com</a>
+      <a href="https://www.linkedin.com/in/lila-roginski" target="_blank" rel="noopener" class="contact-pill outline">LinkedIn</a>
+      <a href="https://luma.com/sustainabilitycreatives?k=c" target="_blank" rel="noopener" class="contact-pill outline">Luma</a>
+    </div>
+    <p class="contact-note">Los Angeles, CA · (650) 799-4639</p>
+  </div>
+</section>
+
+<!-- TWEAKS -->
+<div id="tweaks-panel">
+  <p class="tweaks-title">Tweaks</p>
+  <div class="tweak-row">
+    <p class="tweak-label">Accent color</p>
+    <div class="tweak-swatch-row">
+      <div class="tweak-swatch active" style="background:#d4c826" data-accent="yellow" title="yellow"></div>
+      <div class="tweak-swatch" style="background:#7aaa82" data-accent="sage" title="sage"></div>
+      <div class="tweak-swatch" style="background:#d4845a" data-accent="clay" title="clay"></div>
+    </div>
+  </div>
+</div>
+
 <img src="uploads/Lila_Roginski_photo.jpeg" alt="Lila Roginski" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;">
-<div id="root"></div>
 
-<script type="text/babel">
-const { useState, useEffect } = React;
+<script>
+  window.addEventListener('message', function(e) {
+    if (!e.data) return;
+    if (e.data.type === '__activate_edit_mode') {
+      document.getElementById('tweaks-panel').classList.add('visible');
+    }
+    if (e.data.type === '__deactivate_edit_mode') {
+      document.getElementById('tweaks-panel').classList.remove('visible');
+    }
+  });
+  window.parent.postMessage({ type: '__edit_mode_available' }, '*');
 
-const newsletters = [
-  { subject: "Warming: Sweet Climate Week Pics Included!", sent: "998", opened: "65.1%", clicked: "2.51%", url: "https://eocampaign1.com/web-version?p=8015b190-29ee-11f0-8449-f5c623a97377&pt=campaign&t=1746485666&s=b90299e014521ed6ace4fecc6e3682e4e0922bcffce8f35af4630f79c4cbb72b" },
-  { subject: "Why Hiring Managers Skip Your Portfolio: 2 Common Mistakes", sent: "1,165", opened: "49.7%", clicked: "1.37%", url: "https://eocampaign1.com/web-version?p=7e2423ba-8a9e-11f0-863a-71a7ef473c68&pt=campaign&t=1757117901&s=20a09dbd515fa8695192755865ccf4212bbb8c5b489610ddd3ac40b5e5301d44" },
-  { subject: "Free Leadership Training!", sent: "674", opened: "64.1%", clicked: "5.93%", url: "https://eocampaign1.com/web-version?p=40620446-fa36-11ef-81d2-fb9a6fac7f9d&pt=campaign&t=1741387515&s=4ee06cd5db2a78f4935fe16cd6a64297e9323a842d88ef7a36646e9973a75512" }
-];
-
-const linkedinPosts = [
-  { type: "Blog-style post", reactions: "135", comments: "30", impressions: null, url: "https://www.linkedin.com/feed/update/urn:li:activity:7307836031729311745/" },
-  { type: "Partnered event promotion", reactions: "23", comments: "1", impressions: "1,097", url: "https://www.linkedin.com/posts/lila-roginski_the-sustainability-creatives-are-excited-activity-7348002884866756608-BbNs" },
-  { type: "SF Climate Week promotion", reactions: "23", comments: "4", impressions: "881", url: "https://www.linkedin.com/posts/lila-roginski_laclimateweek-sfclimateweek-activity-7319152269101318144-MatF/" },
-  { type: "Thought piece", reactions: "28", comments: "6", impressions: "1,086", url: "https://www.linkedin.com/posts/lila-roginski_welcome-to-the-hub-activity-7313991250997563392-kFnb/" }
-];
-
-const experience = [
-  {
-    company: "Sustainability Creatives", role: "Business Development Manager", period: "January 2024 – Present",
-    bullets: ["Onboarded 150+ professionals to a climate career platform via multi-channel outreach", "Expanded email, LinkedIn, and calendar audiences by 10,000+ through tailored campaigns", "Facilitated ~100 virtual career workshops supporting 3,000+ job seekers", "Planned and executed multi-city 2025 Climate Week program in LA, SF, and NYC (~60 attendees/event)", "Led content strategy and copywriting across all outreach channels"]
-  },
-  {
-    company: "Enviroslug", role: "Program Manager → Campaign Organizer", period: "September 2021 – July 2023",
-    bullets: ["Supervised $350,000 budget; created quarterly budgets and cash flow forecasts", "Achieved 88% campus voter approval for the No Time to Waste Campaign", "Engaged ~100 students in a waste photo contest, resulting in 500+ petition signatures", "Recruited and trained 10 volunteers in public speaking, social media, and communications"]
-  },
-  {
-    company: "Kids In Nature", role: "Teacher", period: "January 2020 – June 2023",
-    bullets: ["Led after-school environmental education programs for ~30 K–5 students", "Designed interactive, storytelling-based lessons on complex environmental topics", "Offered behavioral support to neurodivergent students"]
-  }
-];
-
-function Arrow() {
-  return <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>;
-}
-function DownArrow() {
-  return <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2v10M2 7l5 5 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>;
-}
-function PlayIcon() {
-  return <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M4 2.5l8 4.5-8 4.5V2.5z" fill="currentColor"/></svg>;
-}
-
-function StatChip({ val, label }) {
-  return (
-    <div>
-      <div className="stat-chip-val">{val}</div>
-      <div className="stat-chip-label">{label}</div>
-    </div>
-  );
-}
-
-function NewsletterCard({ d }) {
-  return (
-    <div className="card">
-      <span className="card-type">Newsletter</span>
-      <p className="card-title">"{d.subject}"</p>
-      <div className="card-stats">
-        <StatChip val={d.sent} label="Sent" />
-        <StatChip val={d.opened} label="Opened" />
-        <StatChip val={d.clicked} label="Clicked" />
-      </div>
-      <a href={d.url} target="_blank" rel="noopener" className="card-link">Read issue <Arrow /></a>
-    </div>
-  );
-}
-
-function LinkedInCard({ d }) {
-  return (
-    <div className="card">
-      <span className="card-type">LinkedIn</span>
-      <p className="card-title">{d.type}</p>
-      <div className="card-stats">
-        <StatChip val={d.reactions} label="Reactions" />
-        <StatChip val={d.comments} label="Comments" />
-        {d.impressions && <StatChip val={d.impressions} label="Impressions" />}
-      </div>
-      <a href={d.url} target="_blank" rel="noopener" className="card-link">View post <Arrow /></a>
-    </div>
-  );
-}
-
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accentColor": "yellow"
-}/*EDITMODE-END*/;
-
-function App() {
-  const [tweaksVisible, setTweaksVisible] = useState(false);
-  const [accent, setAccent] = useState(TWEAK_DEFAULTS.accentColor);
-
-  useEffect(() => {
-    const handler = (e) => {
-      if (e.data?.type === '__activate_edit_mode') setTweaksVisible(true);
-      if (e.data?.type === '__deactivate_edit_mode') setTweaksVisible(false);
-    };
-    window.addEventListener('message', handler);
-    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
-    return () => window.removeEventListener('message', handler);
-  }, []);
-
-  const applyAccent = (name) => {
-    setAccent(name);
-    const map = {
-      yellow: { '--yellow': '#d4c826', '--yellow-hover': '#b8ae1a' },
-      sage:   { '--yellow': '#7aaa82', '--yellow-hover': '#5e8e66' },
-      clay:   { '--yellow': '#d4845a', '--yellow-hover': '#b8673d' },
-    };
-    Object.entries(map[name]).forEach(([k,v]) => document.documentElement.style.setProperty(k, v));
-    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { accentColor: name } }, '*');
+  var accentMap = {
+    yellow: { '--yellow': '#d4c826', '--yellow-hover': '#b8ae1a' },
+    sage:   { '--yellow': '#7aaa82', '--yellow-hover': '#5e8e66' },
+    clay:   { '--yellow': '#d4845a', '--yellow-hover': '#b8673d' }
   };
 
-  return (
-    <>
-      {/* NAV */}
-      <nav>
-        <a href="#hero" className="nav-logo">Lila Roginski.</a>
-        <ul className="nav-links">
-          <li><a href="#newsletters">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  function applyAccent(name) {
+    var vars = accentMap[name];
+    if (!vars) return;
+    Object.keys(vars).forEach(function(k) {
+      document.documentElement.style.setProperty(k, vars[k]);
+    });
+    document.querySelectorAll('.tweak-swatch').forEach(function(s) {
+      s.classList.toggle('active', s.dataset.accent === name);
+    });
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { accentColor: name } }, '*');
+  }
 
-      {/* HERO */}
-      <section className="hero" id="hero">
-        <div className="hero-blobs" aria-hidden="true">
-          <div className="blob blob-tl" />
-          <div className="blob blob-bl" />
-          <div className="blob blob-tr" />
-        </div>
-        <div className="hero-photo" aria-hidden="true">
-          <img src="uploads/Lila_Roginski_photo.jpeg" alt="Lila Roginski" />
-        </div>
-        <div className="hero-content">
-          <p className="hero-eyebrow">Business Development Manager &amp; Content Creator</p>
-          <h1 className="hero-title">
-            Building <em>community</em><br />
-            around what<br />
-            <span className="accent-word">matters most</span>
-          </h1>
-          <p className="hero-body">
-            I'm Lila Roginski — a business development manager and content creator in the sustainability space. I grow audiences, produce video, and turn ideas into events people actually show up for.
-          </p>
-          <div className="hero-ctas">
-            <a href="#newsletters" className="hero-cta">
-              View my work
-              <span className="arrow" style={{color:'var(--dark)'}}>↓</span>
-            </a>
-            <a href="#video" className="hero-cta-secondary">
-              Watch my intro
-              <span className="play-circle">▶</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ABOUT */}
-      <section id="about">
-        <div className="container">
-          <p className="section-label">About</p>
-          <h2 className="section-title" style={{color:'var(--cream)'}}>Marketing meets mission</h2>
-          <div className="about-grid">
-            <div className="about-bio">
-              <p>I'm a marketing and brand creative with a passion for sustainability and community building. As Business Development Manager at Sustainability Creatives, I craft content, grow audiences, and connect people who are building a better world.</p>
-              <p>My work spans video production, weekly newsletters, LinkedIn content strategy, and event management — from intimate career workshops to multi-city Climate Week activations. I believe great storytelling is how movements grow.</p>
-              <p>I hold a B.A. in Environmental Studies from UC Santa Cruz (Magna cum laude) and continue expanding my toolkit with coursework in data science, sustainability reporting, and business.</p>
-            </div>
-            <div className="about-stats">
-              <div className="stat-item"><div className="stat-number">10,000+</div><div className="stat-desc">Audience members grown across email, LinkedIn &amp; calendar</div></div>
-              <div className="stat-item"><div className="stat-number">~100</div><div className="stat-desc">Virtual career workshops, supporting 3,000+ job seekers</div></div>
-              <div className="stat-item"><div className="stat-number">65+</div><div className="stat-desc">Weekly newsletters, growing from 0 to ~1,300 subscribers</div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VIDEO */}
-      <section id="video">
-        <div className="container">
-          <p className="section-label">Video</p>
-          <h2 className="section-title">Meet Lila</h2>
-          <div className="video-wrapper">
-            <iframe src="https://player.vimeo.com/video/1184975986?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Sustainability Creatives Introductory Video" />
-          </div>
-        </div>
-      </section>
-
-      {/* NEWSLETTERS */}
-      <section id="newsletters">
-        <div className="container">
-          <p className="section-label">Newsletters</p>
-          <h2 className="section-title">Building an audience,<br /><em style={{fontStyle:'italic',fontFamily:"'DM Serif Display', serif",fontWeight:700,color:'var(--text-muted)'}}>one week at a time</em></h2>
-          <p className="content-intro">As Business Development Manager at Sustainability Creatives, I design and write our weekly newsletter. Over 1.5 years, I built an audience of ~1,300 subscribers and sent 65+ issues.</p>
-          <div className="cards-grid">
-            {newsletters.map((n,i) => <NewsletterCard key={i} d={n} />)}
-          </div>
-        </div>
-      </section>
-
-      {/* LINKEDIN */}
-      <section id="linkedin">
-        <div className="container">
-          <p className="section-label">LinkedIn Content</p>
-          <h2 className="section-title">Growing communities<br /><em style={{fontStyle:'italic',fontFamily:"'DM Serif Display', serif",fontWeight:700,color:'var(--text-muted)'}}>through strategic content</em></h2>
-          <p className="content-intro">I lead LinkedIn strategy across three accounts — growing my personal following from 300 → 1,707, our director's account from 2,900 → 10,600, and the company page from launch → 1,100 followers.</p>
-          <div className="cards-grid two-col">
-            {linkedinPosts.map((p,i) => <LinkedInCard key={i} d={p} />)}
-          </div>
-        </div>
-      </section>
-
-      {/* EVENTS */}
-      <section id="events">
-        <div className="container">
-          <p className="section-label">Events</p>
-          <h2 className="section-title">Bringing people together</h2>
-          <p className="content-intro">I manage the Sustainability Creatives event calendar on Luma, growing from launch to 1,500 subscribers with 183 events averaging ~25 attendees each.</p>
-          <div className="events-grid">
-            <a href="https://luma.com/sustainabilitycreatives?k=c" target="_blank" rel="noopener" className="event-featured" style={{textDecoration:'none'}}>
-              <div>
-                <span className="event-featured-label">Luma Calendar</span>
-                <p className="event-featured-title">Sustainability Creatives</p>
-              </div>
-              <div className="event-feat-stats">
-                {[['1,433','Subscribers'],['183','Events'],['22','★ Reviews']].map(([n,l]) => (
-                  <div key={l} style={{textAlign:'center'}}>
-                    <div className="event-feat-num">{n}</div>
-                    <div className="event-feat-lbl">{l}</div>
-                  </div>
-                ))}
-              </div>
-            </a>
-            {[
-              {title:"Climate Confessional: Charlie Sellars", guests:"126", url:"https://luma.com/5b2mf1oe"},
-              {title:"Portfolio Tips & Tricks: Job Switcher Edition", guests:"62", url:"https://luma.com/qwzglyde"},
-              {title:"Re-design Jam: Bright Ideas for a Sustainable Future", guests:"67", url:"https://luma.com/466bqkng"}
-            ].map((ev,i) => (
-              <div key={i} className="card">
-                <span className="card-type">Event</span>
-                <p className="card-title">{ev.title}</p>
-                <div className="card-stats"><StatChip val={ev.guests} label="Guests" /></div>
-                <a href={ev.url} target="_blank" rel="noopener" className="card-link">View event <Arrow /></a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* EXPERIENCE */}
-      <section id="experience">
-        <div className="container">
-          <p className="section-label">Experience</p>
-          <h2 className="section-title">Career journey</h2>
-          <div className="exp-list">
-            {experience.map((job,i) => (
-              <div key={i} className="exp-item">
-                <div className="exp-dot" />
-                <p className="exp-period">{job.period}</p>
-                <h3 className="exp-role">{job.role}</h3>
-                <p className="exp-company">{job.company}</p>
-                <ul className="exp-bullets">
-                  {job.bullets.map((b,j) => <li key={j}>{b}</li>)}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="edu-block">
-            <p className="section-label">Education</p>
-            <div>
-              <p className="edu-school">University of California, Santa Cruz</p>
-              <p className="edu-detail">B.A. Environmental Studies · Minor in Sustainability Studies · Magna cum laude · GPA 3.88 · June 2022</p>
-            </div>
-            <div>
-              <p className="edu-school">Santa Monica Community College</p>
-              <p className="edu-detail">Sustainability Reporting, Data Science, Business &amp; Excel · Dean's Honors · GPA 3.77 · Feb 2025–Present</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact">
-        <div className="container">
-          <p className="section-label">Contact</p>
-          <h2 className="section-title">Let's work together</h2>
-          <p className="contact-tagline">Open to marketing, content strategy, and brand creative roles in the sustainability space.</p>
-          <div className="contact-links">
-            <a href="mailto:Lilaclaireroginski@gmail.com" className="contact-pill dark">Lilaclaireroginski@gmail.com</a>
-            <a href="https://www.linkedin.com/in/lila-roginski" target="_blank" rel="noopener" className="contact-pill outline">LinkedIn</a>
-            <a href="https://luma.com/sustainabilitycreatives?k=c" target="_blank" rel="noopener" className="contact-pill outline">Luma</a>
-          </div>
-          <p className="contact-note">Los Angeles, CA · (650) 799-4639</p>
-        </div>
-      </section>
-
-      {/* TWEAKS */}
-      <div id="tweaks-panel" className={tweaksVisible ? 'visible' : ''}>
-        <p className="tweaks-title">Tweaks</p>
-        <div className="tweak-row">
-          <p className="tweak-label">Accent color</p>
-          <div className="tweak-swatch-row">
-            {[['yellow','#d4c826'],['sage','#7aaa82'],['clay','#d4845a']].map(([name,hex]) => (
-              <div key={name} className={`tweak-swatch ${accent===name?'active':''}`} style={{background:hex}} onClick={() => applyAccent(name)} title={name} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  document.querySelectorAll('.tweak-swatch').forEach(function(s) {
+    s.addEventListener('click', function() { applyAccent(s.dataset.accent); });
+  });
 </script>
 </body>
 </html>
